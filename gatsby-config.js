@@ -7,9 +7,16 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     {
+      resolve: "gatsby-plugin-google-fonts",
+      options: {
+        fonts: [`roboto mono\:400,600,700`, `roboto slab\:400,600,700`],
+        display: "swap",
+      },
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "gatsby-starter-default",
+        name: "gatsby-arcadia-starter",
         short_name: "starter",
         start_url: "/",
         background_color: "#663399",
