@@ -2,13 +2,13 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Header from "../ui/header"
-import HeroAnimation from "./hero-background"
+import Hero from "./hero"
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header>
-        <HeroAnimation />
+        <Hero />
       </Header>
       <main>{children}</main>
     </>
