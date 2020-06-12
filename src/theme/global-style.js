@@ -24,6 +24,10 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     font-size: ${props => props.theme.fontSizes[16]};
     font-weight: ${props => props.theme.fontWeight.title};
+
+    @media (max-width: ${props => props.theme.mediaQueries.md}) {
+      font-size: ${props => props.theme.fontSizes[8]};
+    }
   }
 `
 
