@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Arcadia Starter",
-    description: "",
+    title: "Gatsby Arcadia",
+    description: "A modern and awesome starter for Gatsby.",
     author: "@danielkvist",
   },
   plugins: [
