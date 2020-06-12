@@ -4,7 +4,7 @@ export default {
     title: "'Roboto Slab', serif",
     code: "'Roboto Mono', monospace",
   },
-  fontsWeight: {
+  fontWeight: {
     default: 400,
     semiBold: 600,
     title: 700,
