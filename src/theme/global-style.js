@@ -20,6 +20,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${props => props.theme.fonts.title};
     line-height: ${props => props.theme.lineHeights.title};
   }
+
+  h1 {
+    font-size: ${props => props.theme.fontSizes[16]};
+    font-weight: ${props => props.theme.fontWeight.title};
+  }
 `
 
 export default GlobalStyle
