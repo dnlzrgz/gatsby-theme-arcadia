@@ -68,7 +68,7 @@ const Star = props => {
   )
 }
 
-const HeroAnimation = () => {
+const HeroBackground = () => {
   const [hover, setHover] = useState(false)
 
   return (
@@ -76,34 +76,35 @@ const HeroAnimation = () => {
       gl={{ antialias: true, alpha: true }}
       onMouseEnter={e => setHover(true)}
       onMouseOut={e => setHover(false)}
+      onBlur={e => setHover(false)}
     >
       <ambientLight color={Theme.colors.darkGray} intensity={1.0} />
-      <directionalLight color={0xffffff} position={[1, 0, 0]} />
+      <directionalLight color={0x999999} position={[1, 0, 0]} />
       <directionalLight color={Theme.colors.main} position={[0.75, 1, 0.5]} />
       <directionalLight
         color={Theme.colors.accent}
         position={[-0.75, -1, 0.5]}
       />
-      <Planet position={[0, 0, 0, 0]} hovered={hover} />
-      <Skeleton position={[0, 0, 0, 0]} hovered={hover} />
+      <Planet position={[0, 0, 0, 0]} hovered={!hover} />
+      <Skeleton position={[0, 0, 0, 0]} hovered={!hover} />
       <Star
-        position={hover ? [1.2, 1.2, 1.2, 1.2] : [1, 1, 1, 1]}
+        position={!hover ? [1.2, 1.2, 1.2, 1.2] : [1, 1, 1, 1]}
+        hovered={!hover}
+      />
+      <Star
+        position={!hover ? [1.2, -1.2, 1.2, -1.2] : [1, -1, 1, -1]}
+        hovered={!hover}
+      />
+      <Star
+        position={!hover ? [-1.2, 1.2, 1.2, 1.2] : [-1, 1, 1, 1]}
         hovered={hover}
       />
       <Star
-        position={hover ? [1.2, -1.2, 1.2, -1.2] : [1, -1, 1, -1]}
-        hovered={hover}
-      />
-      <Star
-        position={hover ? [-1.2, 1.2, 1.2, 1.2] : [-1, 1, 1, 1]}
-        hovered={hover}
-      />
-      <Star
-        position={hover ? [-1.2, -1.2, 1.2, -1.2] : [-1, -1, 1, -1]}
-        hovered={hover}
+        position={!hover ? [-1.2, -1.2, 1.2, -1.2] : [-1, -1, 1, -1]}
+        hovered={!hover}
       />
     </Canvas>
   )
 }
 
-export default HeroAnimation
+export default HeroBackground
