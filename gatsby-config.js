@@ -1,3 +1,5 @@
+const emoji = require("remark-emoji")
+
 module.exports = {
   siteMetadata: {
     title: "Gatsby Arcadia",
@@ -31,5 +33,29 @@ module.exports = {
     },
     "gatsby-plugin-offline",
     "gatsby-plugin-styled-components",
+    "gatsby-plugin-sharp",
+    "gatsby-remark-images",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 1035,
+              sizeByPixelDesinity: true,
+              remarkPlugins: [emoji],
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "sections",
+        path: `${__dirname}/content/sections/`,
+      },
+    },
   ],
 }
