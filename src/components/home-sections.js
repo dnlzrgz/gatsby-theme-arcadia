@@ -1,9 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Section from "./section"
+import HomeSection from "./home-section"
 
-const Sections = () => {
+const HomeSections = () => {
   const data = useStaticQuery(graphql`
     query {
       allMdx {
@@ -24,10 +24,10 @@ const Sections = () => {
   return (
     <>
       {orderedMdxSections.map(section => (
-        <Section key={section.frontmatter.title} section={section} />
+        <HomeSection key={section.frontmatter.title} section={section} />
       ))}
     </>
   )
 }
 
-export default Sections
+export default HomeSections
