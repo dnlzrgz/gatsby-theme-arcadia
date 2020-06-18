@@ -1,5 +1,9 @@
 const emoji = require("remark-emoji")
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: "Gatsby Arcadia",
@@ -58,10 +62,34 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        token: `${process.env.GITHUB_API_TOKEN}`,
+        variables: {},
+        graphQLQuery: `
+        query {
+          viewer {
+            pinnedItems(first: 6) {
+              edges {
+                node {
+                  ... on Repository {
+                    id
+                    name
+                    url
+                  }
+                }
+              }
+            }
+          }
+        }
+        `,
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
-    //     trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+    //     trackingId: `${process.env.GOOGLE_ANALYTICS_KEY}`,
     //     head: false,
     //     anonymize: true,
     //     respectDNT: true,
