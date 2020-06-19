@@ -76,6 +76,7 @@ module.exports = {
                   ... on Repository {
                     id
                     name
+                    description
                     url
                   }
                 }
