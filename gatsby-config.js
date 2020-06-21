@@ -9,7 +9,35 @@ module.exports = {
     title: "Gatsby Arcadia",
     description: "A modern and awesome starter for Gatsby.",
     author: "@danielkvist",
+    email: "yourmail@yourmailprovider.com",
     siteUrl: "https://gatsby-arcadia.netlify.app/",
+    copy: "",
+    externalLinks: [
+      {
+        name: "Twitter",
+        url: "#",
+      },
+      {
+        name: "Facebook",
+        url: "#",
+      },
+      {
+        name: "Instagram",
+        url: "#",
+      },
+      {
+        name: "Codepen",
+        url: "#",
+      },
+      {
+        name: "Codepen",
+        url: "#",
+      },
+      {
+        name: "GitLab",
+        url: "#",
+      },
+    ],
   },
   plugins: [
     "gatsby-plugin-react-helmet",

@@ -3,6 +3,10 @@ import PropTypes from "prop-types"
 
 import Header from "../ui/header"
 import Hero from "./hero"
+import Footer from "../ui/footer"
+import ContactInfo from "./contact-info"
+import FooterLinks from "./footer-links"
+import FooterCopyright from "./footer-copyright"
 
 const Layout = ({ children }) => {
   return (
@@ -11,6 +15,11 @@ const Layout = ({ children }) => {
         <Hero />
       </Header>
       <main>{children}</main>
+      <Footer>
+        <ContactInfo />
+        <FooterLinks />
+        <FooterCopyright />
+      </Footer>
     </>
   )
 }

@@ -7,6 +7,7 @@ const RepositoriesSection = styled.section`
   grid-template-rows: repeat(3, 1fr);
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: ${props => props.theme.spacing[17]};
   max-width: ${props => props.theme.mediaQueries.xl};
   padding-left: ${props => props.theme.spacing[7]};
   padding-right: ${props => props.theme.spacing[7]};
