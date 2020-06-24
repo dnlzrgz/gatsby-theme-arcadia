@@ -9,6 +9,7 @@ const Header = styled.header`
   height: 100vh;
   justify-items: center;
   overflow: hidden;
+  position: relative;
 `
 
 export default Header
