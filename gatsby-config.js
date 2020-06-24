@@ -11,6 +11,7 @@ module.exports = {
     author: "@danielkvist",
     email: "yourmail@yourmailprovider.com",
     siteUrl: "https://gatsby-arcadia.netlify.app/",
+    netlifyForm: false,
     copy: "",
     externalLinks: [
       {
@@ -30,7 +31,7 @@ module.exports = {
         url: "#",
       },
       {
-        name: "Codepen",
+        name: "GitHub",
         url: "#",
       },
       {

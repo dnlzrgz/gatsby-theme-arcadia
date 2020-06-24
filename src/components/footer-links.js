@@ -23,7 +23,11 @@ const FooterLinks = () => {
   return (
     <SocialLinks>
       {site.siteMetadata.externalLinks.map((link, i) => {
-        return <SocialLink href={link.url}>{link.name}</SocialLink>
+        return (
+          <SocialLink key={link.name} href={link.url}>
+            {link.name}
+          </SocialLink>
+        )
       })}
     </SocialLinks>
   )

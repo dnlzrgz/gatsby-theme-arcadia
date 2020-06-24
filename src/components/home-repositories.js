@@ -41,7 +41,7 @@ const HomeRepositories = ({ section }) => {
           <SectionTitle>GitHub</SectionTitle>
         </SectionHeader>
 
-        <Spacer size={11} />
+        <Spacer size={14} />
 
         <RepositoriesSection>
           {repositories.map(repo => (
@@ -49,7 +49,6 @@ const HomeRepositories = ({ section }) => {
           ))}
         </RepositoriesSection>
       </section>
-
       <Spacer size={7} />
     </>
   )
