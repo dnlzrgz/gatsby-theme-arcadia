@@ -3,11 +3,11 @@ import React from "react"
 import HeroBackground from "./hero-background"
 import HeroTitle from "./hero-title"
 
-const Hero = () => {
+const Hero = ({ title = "", description = "" }) => {
   return (
     <>
       <HeroBackground />
-      <HeroTitle />
+      <HeroTitle title={title} description={description} />
     </>
   )
 }

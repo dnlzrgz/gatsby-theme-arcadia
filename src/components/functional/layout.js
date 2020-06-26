@@ -8,11 +8,11 @@ import ContactInfo from "./contact-info"
 import FooterLinks from "./footer-links"
 import FooterCopyright from "./footer-copyright"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, title = "", description = "" }) => {
   return (
     <>
       <Header>
-        <Hero />
+        <Hero title={title} description={description} />
       </Header>
       <main>{children}</main>
       <Footer>

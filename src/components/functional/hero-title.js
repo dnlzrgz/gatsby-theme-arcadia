@@ -5,7 +5,7 @@ import Title from "../ui/title"
 import TitleContainer from "../ui/title-container"
 import Description from "../ui/description"
 
-const HeroTitle = () => {
+const HeroTitle = ({ title = "", description = "" }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -21,8 +21,8 @@ const HeroTitle = () => {
 
   return (
     <TitleContainer>
-      <Title>{site.siteMetadata.title}</Title>
-      <Description>{site.siteMetadata.description}</Description>
+      <Title>{title || site.siteMetadata.title}</Title>
+      <Description>{description || site.siteMetadata.description}</Description>
     </TitleContainer>
   )
 }
