@@ -1,5 +1,7 @@
 # Arcadia
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cb2c10e9-b682-4531-9a64-5c9fb88545bf/deploy-status)](https://app.netlify.com/sites/gatsby-arcadia/deploys)
+
 Arcadia is a modern, beatiful and customizable starter for Gatsby.
 
 ## Features
@@ -10,10 +12,9 @@ Arcadia is a modern, beatiful and customizable starter for Gatsby.
 - Contact form with Netlify support.
 - Great accessibility & SEO.
 - Google Analytics ready to use.
-- Optional PWA.
-- Offline support.
+- PWA & Offline support.
+- Easy to customize theme using Styled Components.
 - Clear project structure.
-- Easy to customize theme using Styled components.
 
 ## Installation
 
@@ -208,3 +209,50 @@ Arcadia uses a CSS-in-JS library called [styled-components](https://styled-compo
 > If you are not going to deeply customize Arcadia, I recommend you to change only the colors.
 
 Unfortunately the theme cannot be applied everywhere. So if, for example, you change the colors used by Arcadia you will also need to update them in the main gatsby configuration file (`gatsby-config.js`), specifically in the `gatsby-plugin-manifest` configuration.
+
+## MDX sections
+
+Arcadia, by default, looks for the folder `/content/sections` (this path is customizable) to generate your home sections. You can have as many sections as you want as long as each MDX file has a `title` and an `order` specified in the frontmatter.
+
+```mdx
+---
+title: Gatsby
+order: 2
+---
+
+Gatsby is just amazing. Thanks to it and its great number of available plugins Arcadia has offline support among many other things. If you're not familiar with Gatsby don't worry, It's a really well documented project with a fantastic community.
+```
+
+If you want to know more about what MDX is check the official documentation [here](https://mdxjs.com/) or this page about [Gatsby and MDX](https://mdxjs.com/getting-started/gatsby).
+
+## GitHub sections
+
+This starter is intended to be used as portfolio for a developer. That's why I decided to add a section to showcase your most important repositories on GitHub.
+
+If you don't want to display your pinned repositories you can remove the functional component `home-repositories.js` from your `index.js` page and the plugin `gatsby-source-github-api` from the `gatsby-config.js` file.
+
+> If you're looking for or need support for GitLab, I'm sorry to say that at the moment I have no plans to add it as an alternative, although this may change in the future. I have nothing against GitLab, this is for practical reasons.
+
+## Contact form
+
+Arcadia uses [`react-hook-forms`](https://react-hook-form.com/) to manage the contact form. By default it comes with a field for a name, a contact email and a message. To modify this contact form to add or remove fields you will need to modify the functional component `home-form.js`.
+
+For the moment it only works with Netlify forms, so if you disable the `netlifyForm` option in the `gatsby-config.js` file the form won't work.
+
+To avoid bots or spam, once a message has been sent the form will disappear to display a "thank you!" message.
+
+## Footer
+
+The footer in Arcadia only shows the contact email, a list of links for your social networks and a copyright message. To change any of these values you can go and modify the `gatsby-config.js` file as explained [above](https://github.com/danielkvist/gatsby-arcadia-starter#site-metadata).
+
+## Help is always welcome!
+
+If you have ideas to make Arcadia a better project or you detect any errors please do not hesitate to let me know either by sending a PR or by opening an issue!
+
+## In the future
+
+In the future I would like:
+
+- Convert Arcadia into a Gatsby theme.
+- Add support for blogging.
+- Add support for multiple languages.
