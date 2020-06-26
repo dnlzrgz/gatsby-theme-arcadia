@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const FormTextarea = styled.textarea`
-  background-color: white;
+  background-color: ${props => props.theme.colors.white};
   border-radius: ${props => props.theme.radii[3]};
   border: 1px solid ${props => props.theme.colors.gray};
   color: ${props => props.theme.colors.drakGray}

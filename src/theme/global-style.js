@@ -2,8 +2,8 @@ import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    background-color: ${props => props.theme.colors.white};
-    color: ${props => props.theme.colors.darkGray};
+    background-color: ${props => props.theme.colors.background};
+    color: ${props => props.theme.colors.text};
     font-family: ${props => props.theme.fonts.default};
     font-size: 16px;
     line-height: ${props => props.theme.lineHeights.default};
