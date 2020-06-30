@@ -1,8 +1,8 @@
 {
   "name": "gatsby-arcadia-starter",
-  "private": true,
+  "private": false,
   "description": "",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "author": "Daniel (Danielkvist) <danielkvist@protonmail.com>",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.5",
@@ -33,6 +33,7 @@
     "three": "^0.117.1"
   },
   "devDependencies": {
+    "husky": "^4.2.5",
     "prettier": "2.0.5"
   },
   "keywords": [
@@ -47,6 +48,11 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
   },
   "repository": {
     "type": "git",
