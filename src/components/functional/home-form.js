@@ -47,9 +47,10 @@ const HomeForm = () => {
 
           <main>
             <Form
+              name="Contact Form"
               onSubmit={handleSubmit(onSubmit)}
               method="POST"
-              data-netlify={site.siteMetadata.netlifyForm}
+              data-netlify={`${site.siteMetadata.netlifyForm}`}
             >
               {/* Honeypot */}
               <input
