@@ -35,7 +35,7 @@ As you may already know, the main Gatsby configuration file is divided into two 
 ### Site Metadata
 
 ```js
-siteMetadata: {
+const siteMetadata = {
   title: "Gatsby Arcadia",
   description: "A modern and awesome starter for Gatsby.",
   author: "@danielkvist",
@@ -87,7 +87,7 @@ siteMetadata: {
 ### Plugins
 
 ```js
-plugins: [
+const plugins = [
   "gatsby-plugin-react-helmet",
   {
     resolve: "gatsby-plugin-google-fonts",
@@ -139,43 +139,44 @@ plugins: [
     },
   },
   `gatsby-plugin-sitemap`,
-  {
+  process.env.GITHUB_API_TOKEN && {
     resolve: `gatsby-source-github-api`,
     options: {
       token: `${process.env.GITHUB_API_TOKEN}`,
       variables: {},
       graphQLQuery: `
-      query {
-        viewer {
-          pinnedItems(first: 6) {
-            edges {
-              node {
-                ... on Repository {
-                  id
-                  name
-                  description
-                  url
+        query {
+          viewer {
+            pinnedItems(first: 6) {
+              edges {
+                node {
+                  ... on Repository {
+                    id
+                    name
+                    description
+                    url
+                  }
                 }
               }
             }
           }
         }
-      }`,
+        `,
     },
   },
-  {
+  process.env.GOOGLE_ANALYTICS_KEY && {
     resolve: `gatsby-plugin-google-analytics`,
-     options: {
-     trackingId: `${process.env.GOOGLE_ANALYTICS_KEY}`,
-     head: false,
-     anonymize: true,
-     respectDNT: true,
-     defer: true,
-     sampleRate: 5,
-     siteSpeedSampleRate: 10,
+    options: {
+      trackingId: `${process.env.GOOGLE_ANALYTICS_KEY}`,
+      head: false,
+      anonymize: true,
+      respectDNT: true,
+      defer: true,
+      sampleRate: 5,
+      siteSpeedSampleRate: 10,
     },
   },
-],
+].filter(Boolean)
 ```
 
 Here is a link to the official documentation for each plugin:
@@ -201,6 +202,8 @@ GOOGLE_ANALYTICS_KEY=YOURGOOGLEANALYTICSKEY
 ```
 
 > If you have any doubts about how to get a personal access token for the GitHub API check this [link](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token#using-a-token-on-the-command-line).
+
+If you don't add a token for Github or a key to Google analytics those plugins won't be used, in the case of GitHub you have to perform a series of steps described [here](https://github.com/danielkvist/gatsby-arcadia-starter#github-sections) to avoid query errors.
 
 ## Theme
 
@@ -229,7 +232,7 @@ If you want to know more about what MDX is check the official documentation [her
 
 This starter is intended to be used as portfolio for a developer. That's why I decided to add a section to showcase your most important repositories on GitHub.
 
-If you don't want to display your pinned repositories you can remove the functional component `home-repositories.js` from your `index.js` page and the plugin `gatsby-source-github-api` from the `gatsby-config.js` file.
+If you don't want to display your pinned repositories you can remove the functional component `home-repositories.js` from your `index.js` page and remove the `home-repositories.js` component file. If you don't specify a `GITHUB_API_TOKEN` env variable the `gatsby-source-github-api` will not be used.
 
 > If you're looking for or need support for GitLab, I'm sorry to say that at the moment I have no plans to add it as an alternative, although this may change in the future. I have nothing against GitLab, this is for practical reasons.
 
