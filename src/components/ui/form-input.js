@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const FormInput = styled.input`
-  background-color: ${props => props.theme.colors.white};
+  background-color: ${props => props.theme.colors.pureWhite};
   border-radius: ${props => props.theme.radii[3]};
   border: 1px solid ${props => props.theme.colors.gray};
   color: ${props => props.theme.colors.drakGray}

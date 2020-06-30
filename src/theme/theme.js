@@ -40,6 +40,7 @@ export default {
     main: "#c7166f",
     text: "#1a0f13",
     white: "#f2f1f4",
+    pureWhite: "#ffffff",
   },
   spacing: [
     "0rem",
