@@ -248,6 +248,10 @@ To avoid bots or spam, once a message has been sent the form will disappear to d
 
 The footer in Arcadia only shows the contact email, a list of links for your social networks and a copyright message. To change any of these values you can go and modify the `gatsby-config.js` file as explained [above](https://github.com/danielkvist/gatsby-arcadia-starter#site-metadata).
 
+## Cypress E2E Testing
+
+Arcadia also comes with [Cypress](https://www.cypress.io/) installed and ready to use. If you want to learn more about using Cypress with Gatsby check [this link from the official Gatsby documentation](https://www.gatsbyjs.org/docs/end-to-end-testing/).
+
 ## Help is always welcome!
 
 If you have ideas to make Arcadia a better project or you detect any errors please do not hesitate to let me know either by sending a PR or by opening an issue!
