@@ -183,11 +183,11 @@ Here is a link to the official documentation for each plugin:
 
 - [gatsby-plugin-react-helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/).
 - [gatsby-plugin-google-fonts](https://www.gatsbyjs.org/packages/gatsby-plugin-google-fonts/).
-- [gatsby-plugin-manifes](https://www.gatsbyjs.org/packages/gatsby-plugin-manifest/).
+- [gatsby-plugin-manifest](https://www.gatsbyjs.org/packages/gatsby-plugin-manifest/).
 - [gatsby-plugin-offline](https://www.gatsbyjs.org/packages/gatsby-plugin-offline/).
-- [gatsby-plugin-styled-component](https://www.gatsbyjs.org/packages/gatsby-plugin-styled-components/).
+- [gatsby-plugin-styled-components](https://www.gatsbyjs.org/packages/gatsby-plugin-styled-components/).
 - [gatsby-plugin-sharp](https://www.gatsbyjs.org/packages/gatsby-plugin-sharp/).
-- [gatsby-remakr-images](https://www.gatsbyjs.org/packages/gatsby-remark-images/).
+- [gatsby-remark-images](https://www.gatsbyjs.org/packages/gatsby-remark-images/).
 - [gatsby-plugin-mdx](https://www.gatsbyjs.org/packages/gatsby-plugin-mdx/).
 - [gatsby-source-filesystem](https://www.gatsbyjs.org/packages/gatsby-source-filesystem/).
 - [gatsby-plugin-sitemap](https://www.gatsbyjs.org/packages/gatsby-plugin-sitemap/): needs the `siteUrl` parameter.
