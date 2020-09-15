@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@testing-library/cypress": "^6.0.0",
-    "axe-core": "^3.5.5",
+    "axe-core": "^4.0.2",
     "cypress": "^4.9.0",
     "cypress-axe": "^0.8.1",
     "husky": "^4.2.5",
