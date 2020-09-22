@@ -31,7 +31,7 @@
     "react-three-fiber": "^4.2.21",
     "remark-emoji": "^2.1.0",
     "styled-components": "^5.2.0",
-    "three": "^0.117.1"
+    "three": "^0.120.1"
   },
   "devDependencies": {
     "@testing-library/cypress": "^6.0.1",
