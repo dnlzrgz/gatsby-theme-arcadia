@@ -1,28 +1,17 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
+import useSiteMetadata from "../../hooks/use-site-metadata"
 import Title from "../ui/title"
 import TitleContainer from "../ui/title-container"
 import Description from "../ui/description"
 
 const HeroTitle = ({ title = "", description = "" }) => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-          }
-        }
-      }
-    `
-  )
+  const { title: siteTitle, description: siteDescription } = useSiteMetadata()
 
   return (
     <TitleContainer>
-      <Title>{title || site.siteMetadata.title}</Title>
-      <Description>{description || site.siteMetadata.description}</Description>
+      <Title>{title || siteTitle}</Title>
+      <Description>{description || siteDescription}</Description>
     </TitleContainer>
   )
 }

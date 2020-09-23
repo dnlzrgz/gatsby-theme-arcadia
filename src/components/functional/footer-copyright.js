@@ -1,29 +1,17 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
+import useSiteMetadata from "../../hooks/use-site-metadata"
 import Spacer from "../ui/spacer"
 import FooterCopy from "../ui/footer-copy"
 
 const FooterCopyright = () => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            copy
-          }
-        }
-      }
-    `
-  )
+  const { title, copy } = useSiteMetadata()
 
   return (
     <>
       <Spacer size={5} />
       <FooterCopy>
-        {site.siteMetadata.copy ||
-          `© - ${site.siteMetadata.title} ${new Date().getFullYear()}`}
+        {copy || `© - ${title} ${new Date().getFullYear()}`}
       </FooterCopy>
       <Spacer size={9} />
     </>

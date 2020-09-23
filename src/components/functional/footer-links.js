@@ -1,28 +1,15 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
+import useSiteMetadata from "../../hooks/use-site-metadata"
 import SocialLinks from "../ui/social-links"
 import SocialLink from "../ui/social-link"
 
 const FooterLinks = () => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            externalLinks {
-              name
-              url
-            }
-          }
-        }
-      }
-    `
-  )
+  const { externalLinks } = useSiteMetadata()
 
   return (
     <SocialLinks>
-      {site.siteMetadata.externalLinks.map((link, i) => {
+      {externalLinks.map((link, i) => {
         return (
           <SocialLink key={link.name} href={link.url}>
             {link.name}

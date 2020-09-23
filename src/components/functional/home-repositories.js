@@ -1,36 +1,14 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
+import useGithubRepositories from "../../hooks/use-github-repositories"
 import Spacer from "../ui/spacer"
 import RepositoriesSection from "../ui/repositories-section"
 import SectionHeader from "../ui/section-header"
 import SectionTitle from "../ui/section-title"
-
 import HomeRepository from "./home-repository"
 
-const HomeRepositories = ({ section }) => {
-  const { githubData } = useStaticQuery(graphql`
-    query {
-      githubData {
-        data {
-          viewer {
-            pinnedItems {
-              edges {
-                node {
-                  id
-                  name
-                  description
-                  url
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
-
-  const repositories = githubData.data.viewer.pinnedItems.edges
+const HomeRepositories = () => {
+  const repositories = useGithubRepositories()
 
   return (
     <>

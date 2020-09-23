@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { useForm } from "react-hook-form"
-import { useStaticQuery, graphql } from "gatsby"
 
+import useSiteMetadata from "../../hooks/use-site-metadata"
 import Spacer from "../ui/spacer"
 import SectionHeader from "../ui/section-header"
 import SectionTitle from "../ui/section-title"
@@ -16,15 +16,7 @@ const HomeForm = () => {
   const [sended, setSended] = useState(false)
   const errorMessage = "Is not valid!"
 
-  const { site } = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          netlifyForm
-        }
-      }
-    }
-  `)
+  const { netlifyForm } = useSiteMetadata()
 
   const onSubmit = data => {
     setSended(true)
@@ -50,7 +42,7 @@ const HomeForm = () => {
               name="Contact Form"
               onSubmit={handleSubmit(onSubmit)}
               method="POST"
-              data-netlify={`${site.siteMetadata.netlifyForm}`}
+              data-netlify={`${netlifyForm}`}
             >
               {/* Honeypot */}
               <input
