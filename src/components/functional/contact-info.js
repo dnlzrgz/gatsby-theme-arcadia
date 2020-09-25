@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import copy from "copy-to-clipboard"
 
 import useSiteMetadata from "../../hooks/use-site-metadata"
@@ -7,7 +7,6 @@ import ContactEmail from "../ui/contact-email"
 import ContactCopy from "../ui/contact-copy-btn"
 
 const ContactInfo = () => {
-  const [copied, setCopy] = useState(false)
   const { email } = useSiteMetadata()
 
   return (
@@ -18,10 +17,9 @@ const ContactInfo = () => {
           copy(email, {
             format: "text/plain",
           })
-          setCopy(true)
         }}
       >
-        {copied ? "Copied!" : "Copy"}
+        Copy
       </ContactCopy>
     </ContactContainer>
   )

@@ -16,6 +16,12 @@ const useSiteMetadata = () => {
             name
             url
           }
+          codepen {
+            name
+            description
+            image
+            url
+          }
         }
       }
     }

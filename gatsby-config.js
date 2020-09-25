@@ -12,6 +12,44 @@ const siteMetadata = {
   siteUrl: "https://gatsby-arcadia.netlify.app/",
   netlifyForm: false,
   copy: "",
+  codepen: [
+    {
+      name: "React Calculator",
+      description: "A short description.",
+      image: "calculator.png",
+      url: "#",
+    },
+    {
+      name: "React Calendar Component",
+      description: "A short description.",
+      image: "calendar.png",
+      url: "#",
+    },
+    {
+      name: "Magic Bonfire",
+      description: "A short description.",
+      image: "magic-bonfire.png",
+      url: "#",
+    },
+    {
+      name: "React Markdown Editor",
+      description: "A short description.",
+      image: "markdown.png",
+      url: "#",
+    },
+    {
+      name: "Pomodoro w/ React Context",
+      description: "A short description.",
+      image: "pomodoro.png",
+      url: "#",
+    },
+    {
+      name: "Sign in/Sing Up form",
+      description: "A short description.",
+      image: "signin-singup.jpg",
+      url: "#",
+    },
+  ],
   externalLinks: [
     {
       name: "Twitter",
@@ -62,7 +100,7 @@ const plugins = [
       background_color: "#c7166f",
       theme_color: "#c7166f",
       display: "minimal-ui",
-      icon: "src/images/arcadia-icon.png",
+      icon: "./static/images/icon.png",
     },
   },
   "gatsby-plugin-offline",
