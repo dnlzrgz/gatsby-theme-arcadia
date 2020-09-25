@@ -14,7 +14,11 @@ const HomePen = ({ pen }) => {
       <header>
         <PenTitle>{pen.name}</PenTitle>
       </header>
-      <PenScreenshot src={pen.image} alt={pen.name} />
+      <PenScreenshot
+        src={`/images/${pen.image}`}
+        alt={pen.name}
+        loading="lazy"
+      />
       <PenMain>
         <RepositoryDescription>{pen.description}</RepositoryDescription>
         <div style={{ marginRight: "auto" }}>
