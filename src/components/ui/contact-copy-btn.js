@@ -7,7 +7,7 @@ const ContactCopy = styled.button`
   color: ${props => props.theme.colors.drakGray};
   line-height: 0;
   margin-left: ${props => props.theme.spacing[3]};
-  margin-right: auto;
+  margin-right: ${props => props.theme.spacing[7]};
   padding: ${props => props.theme.spacing[4]};
   transition: background ${props => props.theme.transitions.default},
     color ${props => props.theme.transitions.default},
@@ -18,6 +18,10 @@ const ContactCopy = styled.button`
     color: ${props => props.theme.colors.white};
     border: 2px solid ${props => props.theme.colors.darkGray};
     transform: scale(1.1);
+  }
+
+  @media (max-width: ${props => props.theme.mediaQueries.sm}) {
+    margin: 0;
   }
 `
 
