@@ -67,9 +67,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/danielkvist/gatsby-arcadia-starter"
+    "url": "https://github.com/danielkvist/gatsby-theme-arcadia"
   },
   "bugs": {
-    "url": "https://github.com/danielkvist/gatsby-arcadia-starter/issues"
+    "url": "https://github.com/danielkvist/gatsby-theme-arcadia/issues"
   }
 }
