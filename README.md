@@ -1,8 +1,8 @@
-# Arcadia
+# Arcadia - Gatsby Theme
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/cb2c10e9-b682-4531-9a64-5c9fb88545bf/deploy-status)](https://app.netlify.com/sites/gatsby-arcadia/deploys)
 
-Arcadia is a modern, beatiful and customizable starter for Gatsby.
+Arcadia is a modern, beatiful and customizable theme for Gatsby.
 
 ## Features
 
@@ -24,7 +24,7 @@ To start using Arcadia run the following commands in your terminal:
 ```bash
 git clone <yoursite> https://github.com/danielkvist/gatsby-arcadia-starter
 cd <yoursite>
-npm install && npm run develop
+yarn && yarn run develop
 ```
 
 > **Note**: Arcadia hasn't yet been added to the Gatsby starters gallery, so the command `gatsby new <yoursite> github.com/danielkvist/gatsby-arcadia-starter` does not work for the moment.
@@ -301,7 +301,7 @@ If you have ideas to make Arcadia a better project or you detect any errors plea
 
 In the future I would like:
 
-- Convert Arcadia into a Gatsby theme.
+- ~~Convert Arcadia into a Gatsby theme~~.
 - Add support for dark theme.
 - Add support for blogging.
 - Add support for multiple languages.

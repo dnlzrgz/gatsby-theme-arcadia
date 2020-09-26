@@ -6,7 +6,7 @@ require("dotenv").config({
 
 const siteMetadata = {
   title: "Gatsby Arcadia",
-  description: "A modern and awesome starter for Gatsby.",
+  description: "A modern and awesome theme for Gatsby.",
   author: "@danielkvist",
   email: "yourmail@yourmailprovider.com",
   siteUrl: "https://gatsby-arcadia.netlify.app/",
