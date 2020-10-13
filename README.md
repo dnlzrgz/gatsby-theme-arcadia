@@ -13,7 +13,6 @@ Arcadia is a modern, beatiful and customizable theme for Gatsby.
 - Contact form with Netlify support.
 - Great accessibility & SEO.
 - Google Analytics ready to use.
-- PWA & Offline support.
 - Easy to customize theme using Styled Components.
 - Clear project structure.
 
@@ -141,19 +140,6 @@ const plugins = [
       display: "swap",
     },
   },
-  {
-    resolve: "gatsby-plugin-manifest",
-    options: {
-      name: "gatsby-arcadia-starter",
-      short_name: "starter",
-      start_url: "/",
-      background_color: "#c7166f",
-      theme_color: "#c7166f",
-      display: "minimal-ui",
-      icon: "./static/images/icon.png",
-    },
-  },
-  "gatsby-plugin-offline",
   "gatsby-plugin-styled-components",
   "gatsby-plugin-sharp",
   "gatsby-remark-images",
@@ -179,7 +165,6 @@ const plugins = [
       path: `${__dirname}/content/sections/`,
     },
   },
-  `gatsby-plugin-sitemap`,
   process.env.GITHUB_API_TOKEN && {
     resolve: `gatsby-source-github-api`,
     options: {
@@ -224,14 +209,11 @@ Here is a link to the official documentation for each plugin:
 
 - [gatsby-plugin-react-helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/).
 - [gatsby-plugin-google-fonts](https://www.gatsbyjs.org/packages/gatsby-plugin-google-fonts/).
-- [gatsby-plugin-manifest](https://www.gatsbyjs.org/packages/gatsby-plugin-manifest/).
-- [gatsby-plugin-offline](https://www.gatsbyjs.org/packages/gatsby-plugin-offline/).
 - [gatsby-plugin-styled-components](https://www.gatsbyjs.org/packages/gatsby-plugin-styled-components/).
 - [gatsby-plugin-sharp](https://www.gatsbyjs.org/packages/gatsby-plugin-sharp/).
 - [gatsby-remark-images](https://www.gatsbyjs.org/packages/gatsby-remark-images/).
 - [gatsby-plugin-mdx](https://www.gatsbyjs.org/packages/gatsby-plugin-mdx/).
 - [gatsby-source-filesystem](https://www.gatsbyjs.org/packages/gatsby-source-filesystem/).
-- [gatsby-plugin-sitemap](https://www.gatsbyjs.org/packages/gatsby-plugin-sitemap/): needs the `siteUrl` parameter.
 - [gatsby-source-github-api](https://www.gatsbyjs.org/packages/gatsby-source-github-api/): needs a valid GitHub API token. If you don't want to display your pinned repositories you will have to remove the `HomeRepositories` functional component from your `index` page.
 - [gatsby-plugin-google-analytics](https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/): needs a valid Google Analytics key.
 
