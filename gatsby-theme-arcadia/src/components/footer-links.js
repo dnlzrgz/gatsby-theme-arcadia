@@ -1,8 +1,8 @@
 import React from "react"
 
-import useSiteMetadata from "../../hooks/use-site-metadata"
-import SocialLinks from "../ui/social-links"
-import SocialLink from "../ui/social-link"
+import useSiteMetadata from "../hooks/use-site-metadata"
+import SocialLinks from "./social-links"
+import SocialLink from "./social-link"
 
 const FooterLinks = () => {
   const { externalLinks } = useSiteMetadata()

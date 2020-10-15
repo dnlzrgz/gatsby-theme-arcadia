@@ -2,11 +2,11 @@ import React from "react"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import Spacer from "../ui/spacer"
-import Section from "../ui/section"
-import SectionHeader from "../ui/section-header"
-import SectionTitle from "../ui/section-title"
-import SectionContent from "../ui/section-content"
+import Spacer from "./spacer"
+import Section from "./section"
+import SectionHeader from "./section-header"
+import SectionTitle from "./section-title"
+import SectionContent from "./section-content"
 
 const HomeSection = ({ section }) => {
   return (

@@ -1,11 +1,11 @@
 import React from "react"
 
-import Repository from "../ui/repository"
-import RepositoryTitle from "../ui/repository-title"
-import GridCenter from "../ui/grid-center"
-import RepositoryDescription from "../ui/repository-description"
-import ProjectLink from "../ui/project-link"
-import ProjectLinkText from "../ui/project-link-text"
+import Repository from "./repository"
+import RepositoryTitle from "./repository-title"
+import GridCenter from "./grid-center"
+import RepositoryDescription from "./repository-description"
+import ProjectLink from "./project-link"
+import ProjectLinkText from "./project-link-text"
 
 const HomeRepository = ({ repository }) => {
   return (

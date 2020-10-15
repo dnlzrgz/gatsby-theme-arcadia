@@ -1,10 +1,10 @@
 import React from "react"
 
-import useSitemetadata from "../../hooks/use-site-metadata"
-import Spacer from "../ui/spacer"
-import CodepenSection from "../ui/codepen-section"
-import SectionHeader from "../ui/section-header"
-import SectionTitle from "../ui/section-title"
+import useSitemetadata from "../hooks/use-site-metadata"
+import Spacer from "./spacer"
+import CodepenSection from "./codepen-section"
+import SectionHeader from "./section-header"
+import SectionTitle from "./section-title"
 import HomePen from "./home-pen"
 
 const HomeCodepen = () => {

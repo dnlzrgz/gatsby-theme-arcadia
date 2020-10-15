@@ -1,8 +1,8 @@
 import React from "react"
 
-import useSiteMetadata from "../../hooks/use-site-metadata"
-import Spacer from "../ui/spacer"
-import FooterCopy from "../ui/footer-copy"
+import useSiteMetadata from "../hooks/use-site-metadata"
+import Spacer from "./spacer"
+import FooterCopy from "./footer-copy"
 
 const FooterCopyright = () => {
   const { title, copy } = useSiteMetadata()

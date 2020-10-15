@@ -1,6 +1,6 @@
 import React from "react"
 
-import useAllMdx from "../../hooks/use-all-mdx"
+import useAllMdx from "../hooks/use-all-mdx"
 import HomeSection from "./home-section"
 
 const HomeSections = () => {

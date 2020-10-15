@@ -1,13 +1,13 @@
 import React from "react"
 
-import Layout from "../components/functional/layout"
-import SEO from "../components/functional/seo"
-import HomeSections from "../components/functional/home-sections"
-import HomeRepositories from "../components/functional/home-repositories"
-import HomeCodepen from "../components/functional/home-codepen"
-import HomeForm from "../components/functional/home-form"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import HomeSections from "../components/home-sections"
+import HomeRepositories from "../components/home-repositories"
+import HomeCodepen from "../components/home-codepen"
+import HomeForm from "../components/home-form"
 
-import Spacer from "../components/ui/spacer"
+import Spacer from "../components/spacer"
 
 const IndexPage = () => {
   return (

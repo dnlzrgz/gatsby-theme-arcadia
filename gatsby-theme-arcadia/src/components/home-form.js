@@ -1,15 +1,15 @@
 import React, { useState } from "react"
 import { useForm } from "react-hook-form"
 
-import useSiteMetadata from "../../hooks/use-site-metadata"
-import Spacer from "../ui/spacer"
-import SectionHeader from "../ui/section-header"
-import SectionTitle from "../ui/section-title"
-import Form from "../ui/form"
-import FormLabel from "../ui/form-label"
-import FormSubmit from "../ui/form-submit"
-import FormInput from "../ui/form-input"
-import FormTextarea from "../ui/form-textarea"
+import useSiteMetadata from "../hooks/use-site-metadata"
+import Spacer from "./spacer"
+import SectionHeader from "./section-header"
+import SectionTitle from "./section-title"
+import Form from "./form"
+import FormLabel from "./form-label"
+import FormSubmit from "./form-submit"
+import FormInput from "./form-input"
+import FormTextarea from "./form-textarea"
 
 const HomeForm = () => {
   const { register, handleSubmit, errors } = useForm()

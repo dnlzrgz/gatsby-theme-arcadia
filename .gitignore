@@ -4,3 +4,6 @@ public
 .env
 .env.development
 .env.production
+
+# Local Netlify folder
+.netlify

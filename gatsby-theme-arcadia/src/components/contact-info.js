@@ -1,10 +1,10 @@
 import React from "react"
 import copy from "copy-to-clipboard"
 
-import useSiteMetadata from "../../hooks/use-site-metadata"
-import ContactContainer from "../ui/contact-container"
-import ContactEmail from "../ui/contact-email"
-import ContactCopy from "../ui/contact-copy-btn"
+import useSiteMetadata from "../hooks/use-site-metadata"
+import ContactContainer from "./contact-container"
+import ContactEmail from "./contact-email"
+import ContactCopy from "./contact-copy-btn"
 
 const ContactInfo = () => {
   const { email } = useSiteMetadata()

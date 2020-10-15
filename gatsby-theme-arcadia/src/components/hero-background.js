@@ -2,7 +2,7 @@ import React, { useRef } from "react"
 import { Canvas, useFrame } from "react-three-fiber"
 import * as THREE from "three"
 
-import Theme from "../../theme/theme"
+import Theme from "../theme/theme"
 
 const Planet = props => {
   const mesh = useRef()
