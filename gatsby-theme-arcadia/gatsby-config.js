@@ -139,7 +139,9 @@ const plugins = (sectionsPath, githubToken) => [
   },
 ]
 
-module.exports = ({ sectionsPath, githubToken }) => ({
-  siteMetadata,
-  plugins: plugins(sectionsPath, githubToken),
-})
+module.exports = ({ sectionsPath, githubToken }) => {
+  return {
+    siteMetadata,
+    plugins: plugins(sectionsPath, githubToken),
+  }
+}

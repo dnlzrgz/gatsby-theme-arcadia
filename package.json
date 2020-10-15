@@ -1,5 +1,9 @@
 {
   "private": true,
+  "scripts": {
+    "start": "yarn workspace demo run start",
+    "build": "yarn workspace demo run build"
+  },
   "workspaces": [
     "gatsby-theme-arcadia",
     "demo"

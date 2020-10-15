@@ -1,5 +1,7 @@
+const path = require("path")
+
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `../.env.${process.env.NODE_ENV}`,
 })
 
 const siteMetadata = {
@@ -82,7 +84,7 @@ const plugins = [
   {
     resolve: "gatsby-theme-arcadia",
     options: {
-      sectionsPath: `${__dirname}/content/sections`,
+      sectionsPath: path.join(__dirname, "content", "sections"),
       githubToken: `${process.env.GITHUB_API_TOKEN}`,
     },
   },
