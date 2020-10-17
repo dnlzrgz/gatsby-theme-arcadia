@@ -12,6 +12,10 @@ const useSiteMetadata = () => {
           netlifyForm
           siteUrl
           title
+          seo {
+            title
+            description
+          }
           externalLinks {
             name
             url

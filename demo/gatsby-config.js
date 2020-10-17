@@ -12,6 +12,11 @@ const siteMetadata = {
   siteUrl: "https://gatsby-arcadia.netlify.app/",
   netlifyForm: false,
   copy: "",
+  seo: {
+    title: "Gatsby Arcadia Theme",
+    description:
+      "A modern and awesome theme for Gatsby designed for web developers and with accessibility, performance and customization in mind.",
+  },
   codepen: [
     {
       name: "React Calculator",
