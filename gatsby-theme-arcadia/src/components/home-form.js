@@ -18,8 +18,20 @@ const HomeForm = () => {
 
   const { netlifyForm } = useSiteMetadata()
 
+  const encode = data => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&")
+  }
+
   const onSubmit = data => {
     setSended(true)
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...data }),
+    }).catch(error => console.error(error))
+
     return
   }
 
@@ -39,7 +51,7 @@ const HomeForm = () => {
 
           <main>
             <Form
-              name="Contact Form"
+              name="contact"
               onSubmit={handleSubmit(onSubmit)}
               method="POST"
               data-netlify={`${netlifyForm}`}

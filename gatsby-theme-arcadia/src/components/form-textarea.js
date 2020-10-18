@@ -9,6 +9,7 @@ const FormTextarea = styled.textarea`
   outline: none;
   padding: ${props => props.theme.spacing[3]};
   resize: none;
+  height: ${props => props.theme.spacing[19]};
   transition: border ${props => props.theme.transitions.default};
 
   &:hover,
