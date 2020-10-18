@@ -19,6 +19,10 @@ const GoUpBtn = styled.button`
     border: 2px solid ${props => props.theme.colors.main};
     transform: scale(1.1);
   }
+
+  @media (max-width: ${props => props.theme.mediaQueries.sm}) {
+    padding: ${props => props.theme.spacing[3]};
+  }
 `
 
 export default GoUpBtn

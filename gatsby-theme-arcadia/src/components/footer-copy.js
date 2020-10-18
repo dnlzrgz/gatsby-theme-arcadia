@@ -7,6 +7,10 @@ const FooterCopy = styled.p`
   padding-left: ${props => props.theme.spacing[7]};
   padding-right: ${props => props.theme.spacing[7]};
   text-align: center;
+
+  @media (max-width: ${props => props.theme.mediaQueries.sm}) {
+    margin-bottom: ${props => props.theme.spacing[12]};
+  }
 `
 
 export default FooterCopy
