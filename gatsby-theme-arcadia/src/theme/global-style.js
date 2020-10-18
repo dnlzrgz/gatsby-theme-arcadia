@@ -40,6 +40,10 @@ const GlobalStyle = createGlobalStyle`
       font-size: ${props => props.theme.fontSizes[7]};
     }
   }
+
+  button {
+    cursor: pointer;
+  }
 `
 
 export default GlobalStyle
