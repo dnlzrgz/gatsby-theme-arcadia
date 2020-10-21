@@ -16,7 +16,7 @@ const siteMetadata = {
     title: "Gatsby Arcadia Theme",
     description:
       "A modern and awesome theme for Gatsby designed for web developers and with accessibility, performance and customization in mind.",
-    twitter: "danielkvist_",
+    twitter: "@danielkvist_",
   },
   codepen: [
     {
