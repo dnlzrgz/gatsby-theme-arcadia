@@ -13,8 +13,9 @@ const useSiteMetadata = () => {
           siteUrl
           title
           seo {
-            title
             description
+            title
+            twitter
           }
           externalLinks {
             name

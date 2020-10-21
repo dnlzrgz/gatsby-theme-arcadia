@@ -8,12 +8,14 @@ function SEO({ lang, meta, title }) {
   const {
     title: siteTitle,
     description,
+    siteUrl,
     author: siteAuthor,
-    seo: { title: seoTitle, description: seoDescription },
+    seo: { title: seoTitle, description: seoDescription, twitter: seoAuthor },
   } = useSiteMetadata()
 
   const metaTitle = seoTitle || siteTitle
   const metaDescription = seoDescription || description
+  const metaAuthor = seoAuthor || siteAuthor
 
   return (
     <Helmet
@@ -40,12 +42,16 @@ function SEO({ lang, meta, title }) {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: `${siteUrl}/og-image/index.png`,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
         {
           name: `twitter:creator`,
-          content: siteAuthor,
+          content: { metaAuthor },
         },
         {
           name: `twitter:title`,
