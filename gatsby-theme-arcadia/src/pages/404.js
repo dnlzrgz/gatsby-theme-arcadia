@@ -1,12 +1,16 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import Header from "../components/header"
+import Hero from "../components/hero"
 import SEO from "../components/seo"
 
 const NotFoundPage = () => (
-  <Layout title="404" description="There doesn't seem to be anything here">
-    <SEO title="404: Not found" />
-  </Layout>
+  <>
+    <SEO title="404" />
+    <Header>
+      <Hero title="404" description="You seem lost." />
+    </Header>
+  </>
 )
 
 export default NotFoundPage
