@@ -4,14 +4,15 @@ Arcadia is a modern, fast, beatiful and customizable theme for Gatsby.
 
 ## Features
 
+- Easy to update thanks to [Gatsby themes](https://www.gatsbyjs.com/docs/themes/what-are-gatsby-themes/).
+- Easy customization thanks to [shadowing in Gatsby themes](https://www.gatsbyjs.com/docs/themes/shadowing/).
+- Easy to customize theme using Styled Components.
 - Support for Three.js animations.
 - Easy to create and manage MDX sections.
 - GitHub API support to display your pinned repositories.
 - Codepen section to showcase your pens.
 - Contact form with Netlify support.
 - Great accessibility & SEO.
-- Google Analytics ready to use.
-- Easy to customize theme using Styled Components.
 - Clear project structure.
 
 ## Installation
@@ -269,7 +270,7 @@ To avoid bots or spam, once a message has been sent the form will disappear to d
 
 ## Footer
 
-The footer in Arcadia only shows the contact email, a list of links for your social networks and a copyright message. To change any of these values you can go and modify the `gatsby-config.js` file as explained [above](https://github.com/danielkvist/gatsby-arcadia-starter#site-metadata).
+The footer in Arcadia only shows the contact email, a list of links for your social networks and a copyright message. To change any of these values you can go and modify the `gatsby-config.js` file as explained [above](https://github.com/danielkvist/gatsby-theme-arcadia#default-site-metadata).
 
 ## Help is always welcome!
 
@@ -280,6 +281,4 @@ If you have ideas to make Arcadia a better project or you detect any errors plea
 In the future I would like:
 
 - ~~Convert Arcadia into a Gatsby theme~~.
-- Add support for dark theme.
-- Add support for blogging.
 - Add support for multiple languages.
