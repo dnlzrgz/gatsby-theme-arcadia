@@ -1,0 +1,27 @@
+const spacing = [
+  "0rem",
+  "0.25rem",
+  "0.5rem",
+  "0.75rem",
+  "1rem",
+  "1.25rem",
+  "1.5rem",
+  "2rem",
+  "2.25rem",
+  "2.5rem",
+  "3rem",
+  "3.25rem",
+  "3.5rem",
+  "4rem",
+  "4.25rem",
+  "4.5rem",
+  "5rem",
+  "5.25rem",
+  "5.5rem",
+  "6rem",
+  "6.25rem",
+  "6.5rem",
+  "7rem",
+]
+
+export default spacing

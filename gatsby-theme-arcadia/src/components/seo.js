@@ -9,13 +9,12 @@ function SEO({ lang, meta, title }) {
     title: siteTitle,
     description,
     siteUrl,
-    author: siteAuthor,
-    seo: { title: seoTitle, description: seoDescription, twitter: seoAuthor },
+    author,
+    seo: { title: seoTitle, description: seoDescription },
   } = useSiteMetadata()
 
   const metaTitle = seoTitle || siteTitle
   const metaDescription = seoDescription || description
-  const metaAuthor = seoAuthor || siteAuthor
 
   return (
     <Helmet
@@ -51,7 +50,7 @@ function SEO({ lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: metaAuthor,
+          content: author,
         },
         {
           name: `twitter:title`,
