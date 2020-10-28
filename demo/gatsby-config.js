@@ -90,11 +90,7 @@ const plugins = [
   {
     resolve: "gatsby-plugin-google-fonts",
     options: {
-      fonts: [
-        `roboto\:400,600,700`,
-        `roboto mono\:400,600,700`,
-        `roboto slab\:400,600,700`,
-      ],
+      fonts: [`roboto\:400,600,700`, `roboto slab\:400,600,700`],
       display: "swap",
     },
   },

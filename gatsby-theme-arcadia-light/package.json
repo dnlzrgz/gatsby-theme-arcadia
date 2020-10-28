@@ -1,0 +1,65 @@
+{
+  "name": "gatsby-theme-arcadia-light",
+  "private": false,
+  "description": "Arcadia light is a modern, beatiful and customizable theme for Gatsby.",
+  "version": "1.9.0",
+  "author": "dkvist <danielkvist@protonmail.com>",
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.18",
+    "@mdx-js/react": "^1.6.18",
+    "babel-plugin-styled-components": "^1.11.1",
+    "copy-to-clipboard": "^3.3.1",
+    "gatsby-plugin-mdx": "^1.2.46",
+    "gatsby-plugin-react-helmet": "^3.3.14",
+    "gatsby-plugin-sharp": "^2.6.42",
+    "gatsby-plugin-styled-components": "^3.3.14",
+    "gatsby-remark-images": "^3.3.34",
+    "gatsby-source-filesystem": "^2.3.34",
+    "normalize.css": "^8.0.1",
+    "prop-types": "^15.7.2",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^6.8.6",
+    "remark-emoji": "^2.1.0",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {
+    "gatsby": "^2.24.65",
+    "husky": "^4.3.0",
+    "prettier": "2.1.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.24.65",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby theme",
+    "mdx",
+    "portfolio",
+    "contact"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "yarn run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run format"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielkvist/gatsby-theme-arcadia"
+  },
+  "bugs": {
+    "url": "https://github.com/danielkvist/gatsby-theme-arcadia/issues"
+  }
+}

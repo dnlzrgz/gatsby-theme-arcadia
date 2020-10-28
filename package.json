@@ -6,6 +6,7 @@
   },
   "workspaces": [
     "gatsby-theme-arcadia",
+    "gatsby-theme-arcadia-light",
     "demo"
   ]
 }

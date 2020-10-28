@@ -15,6 +15,8 @@ Arcadia is a modern, fast, beatiful and customizable theme for Gatsby.
 - Great accessibility & SEO.
 - Clear project structure.
 
+> If you would like to use Arcadia but you are looking for something more minimalist I recommend you to check the [Arcadia light version](https://github.com/danielkvist/gatsby-theme-arcadia/tree/master/gatsby-theme-arcadia-light).
+
 ## Installation
 
 To install Arcadia run:
