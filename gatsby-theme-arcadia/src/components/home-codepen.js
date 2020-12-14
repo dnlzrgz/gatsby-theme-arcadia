@@ -16,7 +16,7 @@ const HomeCodepen = () => {
     <>
       <Spacer size={11} />
 
-      <section>
+      <section id="codepen">
         <SectionHeader>
           <SectionTitle>Codepen</SectionTitle>
         </SectionHeader>

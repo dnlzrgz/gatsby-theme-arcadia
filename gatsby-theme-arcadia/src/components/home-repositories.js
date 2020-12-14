@@ -14,7 +14,7 @@ const HomeRepositories = () => {
     <>
       <Spacer size={11} />
 
-      <section>
+      <section id="github">
         <SectionHeader>
           <SectionTitle>GitHub</SectionTitle>
         </SectionHeader>

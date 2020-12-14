@@ -42,7 +42,7 @@ const HomeForm = () => {
       {sended ? (
         <SectionTitle>Thanks!</SectionTitle>
       ) : (
-        <section>
+        <section id="contact">
           <SectionHeader>
             <SectionTitle>Contact</SectionTitle>
           </SectionHeader>

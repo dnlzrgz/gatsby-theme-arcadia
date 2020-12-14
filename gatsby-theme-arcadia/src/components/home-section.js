@@ -13,7 +13,9 @@ const HomeSection = ({ section }) => {
     <>
       <Spacer size={11} />
 
-      <Section>
+      <Section
+        id={section.frontmatter.title.split(" ").join("_").toLowerCase()}
+      >
         <SectionHeader>
           <SectionTitle>{section.frontmatter.title}</SectionTitle>
         </SectionHeader>

@@ -2,7 +2,7 @@
   "name": "gatsby-theme-arcadia-light",
   "private": false,
   "description": "Arcadia light is a modern, beatiful and customizable theme for Gatsby.",
-  "version": "1.9.1",
+  "version": "1.9.2",
   "author": "dkvist <danielkvist@protonmail.com>",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.18",
@@ -24,7 +24,6 @@
   },
   "devDependencies": {
     "gatsby": "^2.24.65",
-    "husky": "^4.3.0",
     "prettier": "2.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
@@ -42,19 +41,6 @@
     "contact"
   ],
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "yarn run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn run format"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/danielkvist/gatsby-theme-arcadia"

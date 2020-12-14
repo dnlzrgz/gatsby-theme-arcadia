@@ -263,6 +263,8 @@ Gatsby is just amazing. Thanks to it and its great number of available plugins A
 
 If you want to know more about what MDX is check the official documentation [here](https://mdxjs.com/) or this page about [Gatsby and MDX](https://mdxjs.com/getting-started/gatsby).
 
+> Note: every section in Arcadia will have an ID based on their title in case you want to add a navigation menu later.
+
 ## GitHub sections
 
 This starter is intended to be used as portfolio for a developer. That's why I decided to add a section to showcase your most important repositories on GitHub.
