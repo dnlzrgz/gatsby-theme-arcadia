@@ -4,6 +4,9 @@ public
 .env
 .env.development
 .env.production
+.yarn
+.pnp.js
+.yarnrc.yml
 
 # Local Netlify folder
 .netlify

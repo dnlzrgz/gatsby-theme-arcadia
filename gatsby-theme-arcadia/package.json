@@ -1,8 +1,7 @@
 {
   "name": "gatsby-theme-arcadia",
-  "private": false,
   "description": "Arcadia is a modern, beatiful and customizable theme for Gatsby.",
-  "version": "1.9.2",
+  "version": "1.9.3",
   "author": "dkvist <danielkvist@protonmail.com>",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.18",
@@ -23,13 +22,13 @@
     "react-three-fiber": "^5.0.1",
     "remark-emoji": "^2.1.0",
     "styled-components": "^5.2.0",
-    "three": "^0.120.1"
+    "three": "^0.123.0"
   },
   "devDependencies": {
     "gatsby": "^2.24.65",
-    "prettier": "2.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "prettier": "2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "peerDependencies": {
     "gatsby": "^2.24.65",
