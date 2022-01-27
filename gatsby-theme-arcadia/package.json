@@ -22,7 +22,7 @@
     "react-three-fiber": "^5.0.1",
     "remark-emoji": "^2.1.0",
     "styled-components": "^5.2.0",
-    "three": "^0.125.0"
+    "three": "^0.137.0"
   },
   "devDependencies": {
     "gatsby": "^2.24.65",
